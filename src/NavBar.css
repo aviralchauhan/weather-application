@@ -1,0 +1,76 @@
+.sidenav {
+  background-image: linear-gradient(to bottom, #0f2027,#24343B);
+  height: 95vh;
+
+  width: 240px;
+  position: absolute;
+  padding: 0 30px;
+  transition: all 0.7s;
+  z-index: 1;
+  left: -15%;
+  border-radius: 0px 8px;
+}
+.sidenav.active {
+  left: 0;
+}
+.showIcon{
+  right: 10px;
+  position: absolute;
+}
+.showIcon li{
+  list-style-type: none; 
+}
+
+.hide_showIcon{
+  list-style-type: none;
+  margin: 35px 0px;
+  cursor: pointer;
+  
+}
+.notShowIcon{
+  display: none;
+}
+ul {
+  padding: 0px;
+}
+ul .sidebar_element {
+  list-style-type: none;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+ul .sidebar_element a {
+  color: #eaecef;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+ul .sidebar_element a:hover,
+ul .sidebar_element a.active {
+  background: #3d4149;
+}
+.logo {
+  height: 60px;
+  margin: 10px 0px;
+}
+
+.contact_link {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  column-gap: 15px;
+  margin-top: 11px;
+}
+.contact_link li{
+  padding: 5px;
+}
+.contact_link li a :hover{
+  cursor: pointer;
+}
+.contact_link img {
+  height: 35px;
+}

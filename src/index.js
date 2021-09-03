@@ -3,10 +3,34 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./NavBar.css";
+import News from './News'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
+import Header from './Header';
+
 
 ReactDOM.render(
+  
+
   <React.StrictMode>
-    <App />
+    <Router>  
+    <Header />
+      <Switch>
+          <Route path="/news">
+            <News />
+          </Route>
+          <Route path="/">
+            <App />
+          </Route>
+        </Switch>
+     </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

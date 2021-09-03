@@ -1,0 +1,27 @@
+.news{
+    margin: 0rem 0rem 0rem 3rem;
+    padding: 10px;
+    background-image: linear-gradient(to left ,white, #bdc3c7);
+
+}
+.news h1{
+    padding: 5px;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.content{
+    background-image: linear-gradient(to bottom ,grey, #bdc3c7);
+    padding: 8px;
+    border-radius: 6px;
+    max-width: 14.5rem; 
+}
+.newsContent {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+}

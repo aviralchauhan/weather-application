@@ -1,4 +1,3 @@
-  
 * {
   margin: 0;
   padding: 0;
@@ -6,47 +5,68 @@
 }
 
 body {
-  font-family: 'montseratt', sans-serif;
+  font-family: "montseratt", sans-serif;
 }
-
+/*background video */
 .app {
-  background-image: url('./assests/cold-bg.jpg');
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4s ease;
+  color: black;
 }
 
-.app.warm {
-  background-image: url('./assests/warm-bg.jpeg');
+.bgvideo {
+  object-fit:cover;
+  background-size:cover;
+  transition: 0.5s ease;
+  position: absolute;
+  z-index: -1;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: auto !important;
 }
+
 
 main {
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  height: 94vh;
+  margin-left: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
   padding: 25px;
+  padding-top: 1px;
+  padding-bottom: 11px;
 }
+.container_0 {
+  display: flex;
 
+}
+.container_1{
+  display: flex;
+}
 .search-box {
   width: 100%;
-  margin: 0 0 75px;
+  max-width: 640px;
+  margin: 30px auto;
 }
-
+/* search bar */
 .search-box .search-bar {
   display: block;
   width: 100%;
   padding: 15px;
-
   appearance: none;
   background: none;
   border: none;
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
+  border-radius: 16px;
+  margin-top: 0px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-  
+
   color: #313131;
   font-size: 20px;
 
@@ -57,45 +77,71 @@ main {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.location-box .location{
-  color:#FFF;
+.location-box .location {
+  color: #fff;
   font-size: 32px;
   font-weight: 500;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 50, 0.5);
+  display: inline;
 }
-.location-box .date{
-  color:#FFF;
+.location-box .date {
+  color: #fff;
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
   text-align: center;
   text-shadow: rgba(50, 50, 50, 0.5);
+  display: flex;
 }
-.weather-box{
+
+.conatiner_1 {
   text-align: center;
+  display: inline-block;
 }
-.weather-box .temp{
+.conatiner_1 .temp .icon {
+  padding-left: 10px;
+}
+.conatiner_1 .temp {
   position: relative;
   display: inline-block;
-  margin:30px auto;
+  margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 15px 25px;
-  color:#FFF;
+  color: #fff;
   font-size: 102px;
   font-weight: 900;
   text-shadow: rgba(50, 50, 50, 0.5);
   text-align: center;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
-.weather-box .weather{
-  color:#FFF;
-  font-size: 48px;
-  font-weight: 700;
+.conatiner_1 .weather {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
   text-shadow: 3px 3px rgba(50, 50, 50, 0.5);
+
+  padding-left: 28px;
+  display: inherit;
+  text-align: left;
 }
-.extraInfo{
-  font-size: 20px;
-  color:#FFF;
+.extraInfo {
+  font-size: 16px;
+  color: #fff;
+
+  padding: 10px;
+  position: relative;
+
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+.extraInfo div {
+  display: inherit;
+  font-weight: 200;
+}
+.extraInfo .extraInfoIcon {
+  height: 30px;
+  padding-right: 5px;
 }

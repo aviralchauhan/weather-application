@@ -1,0 +1,11 @@
+
+.header {
+    color: #fff;
+    padding: 5px 30px;
+    background-image: linear-gradient(to right, #0f2027,#24343B, #bdc3c7, transparent);
+  
+    height: 50px;
+  }
+  .header_logo{
+    height: 40px;
+  }
