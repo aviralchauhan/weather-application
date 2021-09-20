@@ -59,7 +59,7 @@ function NavBar() {
           style={{ height: "25px" }}
           src="https://img-premium.flaticon.com/png/512/3055/premium/3055871.png?token=exp=1630231293~hmac=4f2a87f26a125266cc76850abcd72f4e"
         />
-            <Link to="News">News</Link>
+            <Link to="News">Newsk</Link>
           </li>
           <li className="sidebar_element">
           <img
